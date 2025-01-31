@@ -1,0 +1,11 @@
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Debug\net9.0\SecureBase.deps.json
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Debug\net9.0\SecureBase.dll
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Debug\net9.0\SecureBase.pdb
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Debug\net9.0\SecureBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Debug\net9.0\SecureBase.AssemblyInfoInputs.cache
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Debug\net9.0\SecureBase.AssemblyInfo.cs
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Debug\net9.0\SecureBase.csproj.CoreCompileInputs.cache
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Debug\net9.0\SecureBase.dll
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Debug\net9.0\refint\SecureBase.dll
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Debug\net9.0\SecureBase.pdb
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Debug\net9.0\ref\SecureBase.dll

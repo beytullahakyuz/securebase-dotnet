@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SecureBase</id>
+    <version>1.0.0</version>
+    <title>SecureBase</title>
+    <authors>SecureBase</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>https://github.com/beytullahakyuz/securebase-dotnet</projectUrl>
+    <description>SecureBase Library</description>
+    <repository type="git" url="https://github.com/beytullahakyuz/securebase-dotnet" />
+    <dependencies>
+      <group targetFramework="net6.0" />
+      <group targetFramework="net7.0" />
+      <group targetFramework="net8.0" />
+      <group targetFramework="net9.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net6.0\SecureBase.dll" target="lib\net6.0\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net7.0\SecureBase.dll" target="lib\net7.0\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net8.0\SecureBase.dll" target="lib\net8.0\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net9.0\SecureBase.dll" target="lib\net9.0\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\LICENSE" target="\LICENSE" />
+  </files>
+</package>
