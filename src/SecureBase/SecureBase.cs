@@ -16,6 +16,15 @@ public class SecureBase : IDisposable
 
     public SecureBase(string secretkey) {
         if (secretkey.Length != 0) {
+            SetSecretKey(secretkey);
+        } else {
+            globalcharset = base64standart;
+            padding = '=';
+        }
+    }
+
+    public void SetSecretKey(string secretkey) {
+        if (secretkey.Length != 0) {
             globalcharset = defcharset;
             pr_SuffleCharset(secretkey);
             padding = Convert.ToChar(globalcharset.Substring(64, 1));
@@ -27,9 +36,23 @@ public class SecureBase : IDisposable
     }
 
     public string Encode(string input) {
+        return new UnicodeEncoding(false, false).GetString(ProcessEncoding(new UnicodeEncoding(false, false).GetBytes(input))); 
+    }
+
+    public byte[] Encode(byte[] input) {
+        return ProcessEncoding(input);
+    }
+    public string Decode(string input) {
+        return new UnicodeEncoding(false, false).GetString(ProcessDecoding(input));
+    }
+
+    public byte[] Decode(byte[] input) {
+        return ProcessDecoding(new UnicodeEncoding(false, false).GetString(input));
+    }
+    private byte[] ProcessEncoding(byte[] input) {
         try {
             char[] baseArray = globalcharset.ToCharArray();
-            byte[] pdata = new UnicodeEncoding(false, false).GetBytes(input);
+            byte[] pdata = input;
             char[] encodedData = new char[0];
             if (pdata.Length > 0) {
                 int length = pdata.Length;
@@ -61,28 +84,28 @@ public class SecureBase : IDisposable
                     encodedData[encodedIndex++] = padding;
                 }
             }
-            return new string(encodedData);
+            return new UnicodeEncoding(false, false).GetBytes(encodedData);
         }
         catch (Exception) {
             throw new Exception("Invalid data or secret key!");
         }
     }
 
-    public string Decode(string encoded) {
+    private byte[] ProcessDecoding(string input) {
         try {
             char[] baseArray = globalcharset.ToCharArray();
             byte[] decodedData = new byte[0];
-            if (encoded.Length > 0) {
+            if (input.Length > 0) {
                 byte[] base64Values = new byte[256];
                 for (int i = 0; i < 64; i++) {
                     base64Values[baseArray[i]] = (byte)i;
                 }
-                int length = encoded.Length;
+                int length = input.Length;
                 int paddingCount = 0;
-                if (length > 0 && encoded[length - 1] == padding) {
+                if (length > 0 && input[length - 1] == padding) {
                     paddingCount++;
                 }
-                if (length > 1 && encoded[length - 2] == padding) {
+                if (length > 1 && input[length - 2] == padding) {
                     paddingCount++;
                 }
                 int decodedLength = (length * 3) / 4 - paddingCount;
@@ -90,10 +113,10 @@ public class SecureBase : IDisposable
                 int encodedIndex = 0;
                 int decodedIndex = 0;
                 while (encodedIndex < length) {
-                    int chunk = (base64Values[encoded[encodedIndex++]] << 18) |
-                                (base64Values[encoded[encodedIndex++]] << 12) |
-                                (base64Values[encoded[encodedIndex++]] << 6) |
-                                base64Values[encoded[encodedIndex++]];
+                    int chunk = (base64Values[input[encodedIndex++]] << 18) |
+                                (base64Values[input[encodedIndex++]] << 12) |
+                                (base64Values[input[encodedIndex++]] << 6) |
+                                base64Values[input[encodedIndex++]];
                     decodedData[decodedIndex++] = (byte)((chunk >> 16) & 255);
                     if (decodedIndex < decodedLength) {
                         decodedData[decodedIndex++] = (byte)((chunk >> 8) & 255);
@@ -103,13 +126,12 @@ public class SecureBase : IDisposable
                     }
                 }
             }
-            return new UnicodeEncoding(false, false).GetString(decodedData);
+            return decodedData;
         }
         catch (Exception ex) {
             throw new Exception(ex.Message);
         }
     }
-
     private void pr_SuffleCharset(string secretkey) {
         string secrethash = string.Empty;
         secrethash = computeHash(secretkey, 512);

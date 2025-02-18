@@ -7,32 +7,27 @@ namespace CustomBaseApp
             InitializeComponent();
         }
 
+        
         private void btnTexttoBase64_Click(object sender, EventArgs e) {
             string secretkey = txtSecretKey.Text.Trim();
+            SecureBase bs = new SecureBase();
             Stopwatch sp = new Stopwatch();
             sp.Start();
             if (sender == btnTexttoBase64) {
-                SecureBase bs;
-                if (secretkey.Length == 0)
-                    bs = new SecureBase();
-                else
-                    bs = new SecureBase(secretkey);
+                bs.SetSecretKey(secretkey);
                 txtBase64.Text = "";
                 string data = txtData.Text.Trim();
                 string encodeddata = string.Empty;
                 try {
                     encodeddata = bs.Encode(data);
                 }
-                catch (Exception) {
+                catch (Exception ex) {
+                    MessageBox.Show(ex.Message, "!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     encodeddata = "";
                 }
                 txtBase64.Text = encodeddata;
             } else if (sender == btnBase64toText) {
-                SecureBase bs;
-                if (secretkey.Length == 0)
-                    bs = new SecureBase();
-                else
-                    bs = new SecureBase(secretkey);
+                bs.SetSecretKey(secretkey);
                 txtDecodedData.Text = "";
                 string data = txtEncodedBase64.Text.Trim();
                 string decodeddata = string.Empty;
@@ -40,13 +35,14 @@ namespace CustomBaseApp
                     decodeddata = bs.Decode(data);
                 }
                 catch (Exception ex) {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message, "!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     decodeddata = "";
                 }
                 txtDecodedData.Text = decodeddata;
             }
             sp.Stop();
             statusbar.Text = sp.Elapsed.TotalMilliseconds + " ms";
+            bs.Dispose();
         }
 
         private void btnLang_Click(object sender, EventArgs e) {

@@ -9,7 +9,8 @@ Standart base64 kodlaması birçok projede kullanılmaktadır ve olası veri sı
 ## Kullanım/Örnek
 
 ```javascript
-SecureBase bs = new SecureBase(secretkey);;
+SecureBase bs = new SecureBase();
+bs.SetSecretKey(secretkey);
 
 //Text to Base64
 string encodeddata = bs.Encode(data);
@@ -37,6 +38,11 @@ Kod çözme
 
 [Nuget Gallery](https://www.nuget.org/packages/SecureBase/)
 
+Güncelleme Notları - v1.3
++ Demo uygulaması güncellendi.
++ SetSecretKey fonksiyonu eklendi.
++ Encode ve Decode overload fonksiyonları eklendi. (byte[])
+
 Güncelleme Notları - v1.2
 + Unicode desteği eklendi.
 
@@ -52,13 +58,15 @@ Standard base64 encoding is used in many projects, and in case of possible data 
 ## Using/Example
 
 ```javascript
-SecureBase bs = new SecureBase(secretkey);;
+SecureBase bs = new SecureBase();
+bs.SetSecretKey(secretkey);
 
 //Text to Base64
 string encodeddata = bs.Encode(data);
 
 //Base64 to Text
 string decodeddata = bs.Decode(data);
+
 ```
 
 ### Notes
@@ -80,5 +88,11 @@ Decoding
 
 [Nuget Gallery](https://www.nuget.org/packages/SecureBase/)
 
+Update Notes - v1.3
++ Updated demo application.
++ Added SetSecretKey function.
++ Added Encode and Decode overload functions. (byte[])
+
 Update Notes - v1.2
 + Added unicode support.
+
