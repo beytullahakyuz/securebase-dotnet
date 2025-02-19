@@ -162,7 +162,7 @@ public class SecureBase : IDisposable
 
     private string computeHash(string s, int key) {
         Keccak keccak = new Keccak();
-        byte[] input = System.Text.Encoding.Unicode.GetBytes(s);
+        byte[] input = System.Text.Encoding.UTF8.GetBytes(s);
         StringBuilder sb = new StringBuilder();
         byte[] hash = keccak.Hash(input, key);
         keccak.Dispose();
