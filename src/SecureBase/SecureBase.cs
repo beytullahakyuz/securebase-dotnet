@@ -3,24 +3,33 @@ using System.Security.Cryptography;
 
 public class SecureBase : IDisposable
 {
+
+    public enum SBEncoding{
+        UNICODE,
+        UTF8
+    }
+
     const string defcharset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#&'()*,-.:;<>?@[]\\^_{}|~/+=";
     const string base64standart = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
     string globalcharset = string.Empty;
     char padding;
     private bool disposed = false;
+    SBEncoding GEncoding;
 
-    public SecureBase() {
+    public SecureBase(SBEncoding encoding) {
         globalcharset = base64standart;
         padding = '=';
+        GEncoding = encoding;
     }
 
-    public SecureBase(string secretkey) {
+    public SecureBase(SBEncoding encoding, string secretkey) {
         if (secretkey.Length != 0) {
             SetSecretKey(secretkey);
         } else {
             globalcharset = base64standart;
             padding = '=';
         }
+        GEncoding = encoding;
     }
 
     public void SetSecretKey(string secretkey) {
@@ -36,18 +45,27 @@ public class SecureBase : IDisposable
     }
 
     public string Encode(string input) {
-        return new UnicodeEncoding(false, false).GetString(ProcessEncoding(new UnicodeEncoding(false, false).GetBytes(input))); 
+        if (GEncoding == SBEncoding.UNICODE)
+            return new UnicodeEncoding(false, false).GetString(ProcessEncoding(new UnicodeEncoding(false, false).GetBytes(input)));
+        else
+            return new UTF8Encoding().GetString(ProcessEncoding(new UTF8Encoding().GetBytes(input)));
     }
 
     public byte[] Encode(byte[] input) {
         return ProcessEncoding(input);
     }
     public string Decode(string input) {
-        return new UnicodeEncoding(false, false).GetString(ProcessDecoding(input));
+        if (GEncoding == SBEncoding.UNICODE)
+            return new UnicodeEncoding(false, false).GetString(ProcessDecoding(input));
+        else
+            return new UTF8Encoding().GetString(ProcessDecoding(input));
     }
 
     public byte[] Decode(byte[] input) {
-        return ProcessDecoding(new UnicodeEncoding(false, false).GetString(input));
+        if (GEncoding == SBEncoding.UNICODE)
+            return ProcessDecoding(new UnicodeEncoding(false, false).GetString(input));
+        else
+            return ProcessDecoding(new UTF8Encoding().GetString(input));
     }
     private byte[] ProcessEncoding(byte[] input) {
         try {
@@ -84,7 +102,10 @@ public class SecureBase : IDisposable
                     encodedData[encodedIndex++] = padding;
                 }
             }
-            return new UnicodeEncoding(false, false).GetBytes(encodedData);
+            if (GEncoding == SBEncoding.UNICODE)
+                return new UnicodeEncoding(false, false).GetBytes(encodedData);
+            else
+                return new UTF8Encoding().GetBytes(encodedData);
         }
         catch (Exception) {
             throw new Exception("Invalid data or secret key!");
@@ -132,6 +153,7 @@ public class SecureBase : IDisposable
             throw new Exception(ex.Message);
         }
     }
+    
     private void pr_SuffleCharset(string secretkey) {
         string secrethash = string.Empty;
         secrethash = computeHash(secretkey, 512);

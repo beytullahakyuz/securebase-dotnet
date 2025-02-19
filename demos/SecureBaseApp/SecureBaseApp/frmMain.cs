@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Text;
 
 namespace CustomBaseApp
 {
@@ -7,10 +8,14 @@ namespace CustomBaseApp
             InitializeComponent();
         }
 
-        
         private void btnTexttoBase64_Click(object sender, EventArgs e) {
             string secretkey = txtSecretKey.Text.Trim();
-            SecureBase bs = new SecureBase();
+            SecureBase.SBEncoding sbencoding;
+            if (cmbEncoding.SelectedIndex == 0)
+                sbencoding = SecureBase.SBEncoding.UNICODE;
+            else
+                sbencoding = SecureBase.SBEncoding.UTF8;
+            SecureBase bs = new SecureBase(sbencoding);
             Stopwatch sp = new Stopwatch();
             sp.Start();
             if (sender == btnTexttoBase64) {
@@ -68,7 +73,11 @@ namespace CustomBaseApp
                 btnLang.Text = "English";
             }
             this.Refresh();
-           
+
+        }
+
+        private void frmMain_Load(object sender, EventArgs e) {
+            cmbEncoding.SelectedIndex = 1;
         }
     }
 }

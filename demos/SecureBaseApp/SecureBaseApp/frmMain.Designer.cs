@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent() {
             themeForm1 = new ReaLTaiizor.Forms.ThemeForm();
+            cmbEncoding = new ReaLTaiizor.Controls.DungeonComboBox();
             btnLang = new ReaLTaiizor.Controls.ForeverButton();
             statusbar = new ReaLTaiizor.Controls.ForeverStatusBar();
             hopeTabPage1 = new ReaLTaiizor.Controls.HopeTabPage();
@@ -57,6 +58,7 @@
             // themeForm1
             // 
             themeForm1.BackColor = Color.FromArgb(32, 41, 50);
+            themeForm1.Controls.Add(cmbEncoding);
             themeForm1.Controls.Add(btnLang);
             themeForm1.Controls.Add(statusbar);
             themeForm1.Controls.Add(hopeTabPage1);
@@ -76,12 +78,40 @@
             themeForm1.TabIndex = 0;
             themeForm1.Text = "SecureBase .NET App";
             // 
+            // cmbEncoding
+            // 
+            cmbEncoding.BackColor = Color.FromArgb(246, 246, 246);
+            cmbEncoding.ColorA = Color.FromArgb(64, 158, 255);
+            cmbEncoding.ColorB = Color.FromArgb(150, 64, 158, 255);
+            cmbEncoding.ColorC = Color.FromArgb(242, 241, 240);
+            cmbEncoding.ColorD = Color.FromArgb(253, 252, 252);
+            cmbEncoding.ColorE = Color.FromArgb(239, 237, 236);
+            cmbEncoding.ColorF = Color.FromArgb(180, 180, 180);
+            cmbEncoding.ColorG = Color.FromArgb(119, 119, 118);
+            cmbEncoding.ColorH = Color.FromArgb(224, 222, 220);
+            cmbEncoding.ColorI = Color.FromArgb(250, 249, 249);
+            cmbEncoding.DrawMode = DrawMode.OwnerDrawFixed;
+            cmbEncoding.DropDownHeight = 100;
+            cmbEncoding.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbEncoding.Font = new Font("Segoe UI", 10F);
+            cmbEncoding.ForeColor = Color.FromArgb(76, 76, 97);
+            cmbEncoding.FormattingEnabled = true;
+            cmbEncoding.HoverSelectionColor = Color.Empty;
+            cmbEncoding.IntegralHeight = false;
+            cmbEncoding.ItemHeight = 20;
+            cmbEncoding.Items.AddRange(new object[] { "unicode", "utf-8" });
+            cmbEncoding.Location = new Point(627, 19);
+            cmbEncoding.Name = "cmbEncoding";
+            cmbEncoding.Size = new Size(110, 26);
+            cmbEncoding.StartIndex = 0;
+            cmbEncoding.TabIndex = 48;
+            // 
             // btnLang
             // 
             btnLang.BackColor = Color.Transparent;
             btnLang.BaseColor = Color.FromArgb(20, 22, 25);
             btnLang.Font = new Font("Segoe UI", 12F);
-            btnLang.Location = new Point(761, 16);
+            btnLang.Location = new Point(762, 18);
             btnLang.Name = "btnLang";
             btnLang.Rounded = true;
             btnLang.Size = new Size(81, 27);
@@ -367,7 +397,7 @@
             txtSecretKey.Multiline = false;
             txtSecretKey.Name = "txtSecretKey";
             txtSecretKey.ReadOnly = false;
-            txtSecretKey.Size = new Size(678, 41);
+            txtSecretKey.Size = new Size(718, 41);
             txtSecretKey.TabIndex = 31;
             txtSecretKey.TextAlignment = HorizontalAlignment.Left;
             txtSecretKey.UseSystemPasswordChar = false;
@@ -384,6 +414,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SecureBase .NET App";
             TransparencyKey = Color.Fuchsia;
+            Load += frmMain_Load;
             themeForm1.ResumeLayout(false);
             hopeTabPage1.ResumeLayout(false);
             pageEncoding.ResumeLayout(false);
@@ -416,5 +447,6 @@
         private ReaLTaiizor.Controls.DungeonRichTextBox txtEncodedBase64;
         private ReaLTaiizor.Controls.NightLabel lblinfo2;
         private ReaLTaiizor.Controls.ForeverButton btnLang;
+        private ReaLTaiizor.Controls.DungeonComboBox cmbEncoding;
     }
 }

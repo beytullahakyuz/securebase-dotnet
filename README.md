@@ -2,14 +2,17 @@
 
 SecureBase kütüphanesi standart base64 algoritmasına ek olarak gizli anahtar seçeneği sunmaktadır. Böylelikle kütüphaneyi kullanan projelere özgü base64 işlemi gerçekleşir. Her projenin gizli anahtarı farklı olacağından oluşan base64 çıktısıda gizli anahtara bağlı olarak değişir.
 
-## Hedef
+Detaylı bilgi için aşağıdaki kaynağı inceleyiniz.
 
-Standart base64 kodlaması birçok projede kullanılmaktadır ve olası veri sızıntılarında kullanıcı verileri (fotoğraf, kimlik, vb.) base64 ile kodlandığından kolaylıkla açığa çıkabilmektedir. SecureBase burada devreye girerek kodlamanın çözümlenmesini zorlaştırmaktadır ve base64 ile kodlandığını gizlemektedir.
+[SecureBase Wiki](https://beytullahakyuz.gitbook.io/securebase)
 
 ## Kullanım/Örnek
 
 ```javascript
-SecureBase bs = new SecureBase();
+//SecureBase.SBEncoding sbencoding = SecureBase.SBEncoding.UNICODE;
+SecureBase.SBEncoding sbencoding = SecureBase.SBEncoding.UTF8;
+
+SecureBase bs = new SecureBase(sbencoding);
 bs.SetSecretKey(secretkey);
 
 //Text to Base64
@@ -18,10 +21,6 @@ string encodeddata = bs.Encode(data);
 //Base64 to Text
 string decodeddata = bs.Decode(data);
 ```
-
-### Notlar
-**Demos/SecureBaseApp** klasöründen demo projeye erişebilirsiniz.
-Encoding: **Unicode
 
 ## Ekran Görüntüleri
 
@@ -38,27 +37,21 @@ Kod çözme
 
 [Nuget Gallery](https://www.nuget.org/packages/SecureBase/)
 
-Güncelleme Notları - v1.3
-+ Demo uygulaması güncellendi.
-+ SetSecretKey fonksiyonu eklendi.
-+ Encode ve Decode overload fonksiyonları eklendi. (byte[])
-
-Güncelleme Notları - v1.2
-+ Unicode desteği eklendi.
-
-
 ## EN
 
 The SecureBase library offers a secret key option in addition to the standard base64 algorithm. Since the secret key will be different in each project, the base64 output will also vary depending on the secret key.
 
-## Goal
+For detailed information, please review the source below.
 
-Standard base64 encoding is used in many projects, and in case of possible data leaks, user data (photo, identity, etc.) can be easily exposed because it is encoded with base64. This is where SecureBase comes into play, making the encoding harder to decipher and hiding the fact that it is base64 encoded.
+[SecureBase Wiki](https://beytullahakyuz.gitbook.io/securebase)
 
 ## Using/Example
 
 ```javascript
-SecureBase bs = new SecureBase();
+//SecureBase.SBEncoding sbencoding = SecureBase.SBEncoding.UNICODE;
+SecureBase.SBEncoding sbencoding = SecureBase.SBEncoding.UTF8;
+
+SecureBase bs = new SecureBase(sbencoding);
 bs.SetSecretKey(secretkey);
 
 //Text to Base64
@@ -68,10 +61,6 @@ string encodeddata = bs.Encode(data);
 string decodeddata = bs.Decode(data);
 
 ```
-
-### Notes
-You can access demo projet from **demos/SecureBaseApp** klasöründen folder.
-Encoding: **Unicode
 
 ## Screenshots
 
@@ -87,12 +76,3 @@ Decoding
 ## Installation 
 
 [Nuget Gallery](https://www.nuget.org/packages/SecureBase/)
-
-Update Notes - v1.3
-+ Updated demo application.
-+ Added SetSecretKey function.
-+ Added Encode and Decode overload functions. (byte[])
-
-Update Notes - v1.2
-+ Added unicode support.
-
