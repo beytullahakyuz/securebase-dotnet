@@ -23,12 +23,7 @@ public class SecureBase : IDisposable
     }
 
     public SecureBase(SBEncoding encoding, string secretkey) {
-        if (secretkey.Length != 0) {
-            SetSecretKey(secretkey);
-        } else {
-            globalcharset = base64standart;
-            padding = '=';
-        }
+        SetSecretKey(secretkey);
         GEncoding = encoding;
     }
 
@@ -51,9 +46,6 @@ public class SecureBase : IDisposable
             return new UTF8Encoding().GetString(ProcessEncoding(new UTF8Encoding().GetBytes(input)));
     }
 
-    public byte[] Encode(byte[] input) {
-        return ProcessEncoding(input);
-    }
     public string Decode(string input) {
         if (GEncoding == SBEncoding.UNICODE)
             return new UnicodeEncoding(false, false).GetString(ProcessDecoding(input));
@@ -61,12 +53,6 @@ public class SecureBase : IDisposable
             return new UTF8Encoding().GetString(ProcessDecoding(input));
     }
 
-    public byte[] Decode(byte[] input) {
-        if (GEncoding == SBEncoding.UNICODE)
-            return ProcessDecoding(new UnicodeEncoding(false, false).GetString(input));
-        else
-            return ProcessDecoding(new UTF8Encoding().GetString(input));
-    }
     private byte[] ProcessEncoding(byte[] input) {
         try {
             char[] baseArray = globalcharset.ToCharArray();
