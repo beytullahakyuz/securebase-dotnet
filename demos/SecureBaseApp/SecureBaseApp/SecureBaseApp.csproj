@@ -10,12 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="ReaLTaiizor" Version="3.8.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="SecureBase">
-      <HintPath>..\..\SecureBase\SecureBase\bin\Release\net8.0\SecureBase.dll</HintPath>
-    </Reference>
+    <PackageReference Include="SecureBase" Version="1.7.0" />
   </ItemGroup>
 
   <ItemGroup>

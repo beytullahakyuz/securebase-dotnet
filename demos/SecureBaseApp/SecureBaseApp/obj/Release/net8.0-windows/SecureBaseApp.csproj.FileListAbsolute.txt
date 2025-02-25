@@ -5,7 +5,6 @@ C:\Users\beytullahakyuz\Desktop\Libs\SecureBaseApp\SecureBaseApp\bin\Release\net
 C:\Users\beytullahakyuz\Desktop\Libs\SecureBaseApp\SecureBaseApp\bin\Release\net8.0-windows\SecureBaseApp.pdb
 C:\Users\beytullahakyuz\Desktop\Libs\SecureBaseApp\SecureBaseApp\bin\Release\net8.0-windows\ReaLTaiizor.dll
 C:\Users\beytullahakyuz\Desktop\Libs\SecureBaseApp\SecureBaseApp\bin\Release\net8.0-windows\SecureBase.dll
-C:\Users\beytullahakyuz\Desktop\Libs\SecureBaseApp\SecureBaseApp\bin\Release\net8.0-windows\SecureBase.pdb
 C:\Users\beytullahakyuz\Desktop\Libs\SecureBaseApp\SecureBaseApp\obj\Release\net8.0-windows\SecureBaseApp.csproj.AssemblyReference.cache
 C:\Users\beytullahakyuz\Desktop\Libs\SecureBaseApp\SecureBaseApp\obj\Release\net8.0-windows\CustomBaseApp.frmMain.resources
 C:\Users\beytullahakyuz\Desktop\Libs\SecureBaseApp\SecureBaseApp\obj\Release\net8.0-windows\SecureBaseApp.Properties.Resources.resources

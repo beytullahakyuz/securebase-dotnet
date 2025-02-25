@@ -136,7 +136,7 @@ public class SecureBase : IDisposable
             return decodedData;
         }
         catch (Exception ex) {
-            throw new Exception(ex.Message);
+            throw new Exception("Invalid data or secret key!");
         }
     }
     

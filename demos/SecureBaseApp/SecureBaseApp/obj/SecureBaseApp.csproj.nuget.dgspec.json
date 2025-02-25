@@ -54,6 +54,10 @@
             "ReaLTaiizor": {
               "target": "Package",
               "version": "[3.8.1.1, )"
+            },
+            "SecureBase": {
+              "target": "Package",
+              "version": "[1.7.0, )"
             }
           },
           "imports": [

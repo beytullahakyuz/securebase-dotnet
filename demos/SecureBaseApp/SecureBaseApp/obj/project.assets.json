@@ -17,6 +17,15 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
+      },
+      "SecureBase/1.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/SecureBase.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SecureBase.dll": {}
+        }
       }
     }
   },
@@ -48,11 +57,28 @@
         "realtaiizor.3.8.1.1.nupkg.sha512",
         "realtaiizor.nuspec"
       ]
+    },
+    "SecureBase/1.7.0": {
+      "sha512": "wsCAUp1ZbcVTHSwjhRgZL6RztGqwv5V6CmcGuDtciQOM6RSV42/16UOH3u/Xm9iPtqTKVrHKa6iV/Fp9tP4f6w==",
+      "type": "package",
+      "path": "securebase/1.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/SecureBase.dll",
+        "lib/net7.0/SecureBase.dll",
+        "lib/net8.0/SecureBase.dll",
+        "lib/net9.0/SecureBase.dll",
+        "securebase.1.7.0.nupkg.sha512",
+        "securebase.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "ReaLTaiizor >= 3.8.1.1"
+      "ReaLTaiizor >= 3.8.1.1",
+      "SecureBase >= 1.7.0"
     ]
   },
   "packageFolders": {
@@ -109,6 +135,10 @@
           "ReaLTaiizor": {
             "target": "Package",
             "version": "[3.8.1.1, )"
+          },
+          "SecureBase": {
+            "target": "Package",
+            "version": "[1.7.0, )"
           }
         },
         "imports": [

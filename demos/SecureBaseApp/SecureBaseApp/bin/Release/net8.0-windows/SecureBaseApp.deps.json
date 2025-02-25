@@ -9,7 +9,7 @@
       "SecureBaseApp/1.0.0": {
         "dependencies": {
           "ReaLTaiizor": "3.8.1.1",
-          "SecureBase": "1.5.0.0"
+          "SecureBase": "1.7.0"
         },
         "runtime": {
           "SecureBaseApp.dll": {}
@@ -23,11 +23,11 @@
           }
         }
       },
-      "SecureBase/1.5.0.0": {
+      "SecureBase/1.7.0": {
         "runtime": {
-          "SecureBase.dll": {
-            "assemblyVersion": "1.5.0.0",
-            "fileVersion": "1.5.0.0"
+          "lib/net8.0/SecureBase.dll": {
+            "assemblyVersion": "1.7.0.0",
+            "fileVersion": "1.7.0.0"
           }
         }
       }
@@ -46,10 +46,12 @@
       "path": "realtaiizor/3.8.1.1",
       "hashPath": "realtaiizor.3.8.1.1.nupkg.sha512"
     },
-    "SecureBase/1.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
+    "SecureBase/1.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wsCAUp1ZbcVTHSwjhRgZL6RztGqwv5V6CmcGuDtciQOM6RSV42/16UOH3u/Xm9iPtqTKVrHKa6iV/Fp9tP4f6w==",
+      "path": "securebase/1.7.0",
+      "hashPath": "securebase.1.7.0.nupkg.sha512"
     }
   }
 }

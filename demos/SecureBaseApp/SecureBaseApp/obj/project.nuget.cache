@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "AlBNwvkC5aQ=",
+  "dgSpecHash": "qeOgtRrJ/Bw=",
   "success": true,
   "projectFilePath": "C:\\Users\\beytullahakyuz\\Desktop\\Libs\\SecureBaseApp\\SecureBaseApp\\SecureBaseApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\beytullahakyuz\\.nuget\\packages\\realtaiizor\\3.8.1.1\\realtaiizor.3.8.1.1.nupkg.sha512"
+    "C:\\Users\\beytullahakyuz\\.nuget\\packages\\realtaiizor\\3.8.1.1\\realtaiizor.3.8.1.1.nupkg.sha512",
+    "C:\\Users\\beytullahakyuz\\.nuget\\packages\\securebase\\1.7.0\\securebase.1.7.0.nupkg.sha512"
   ],
   "logs": []
 }
