@@ -47,7 +47,6 @@ namespace CustomBaseApp
             }
             sp.Stop();
             statusbar.Text = sp.Elapsed.TotalMilliseconds + " ms";
-            bs.Dispose();
         }
 
         private void btnLang_Click(object sender, EventArgs e) {
