@@ -1,19 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;net481;netstandard1.6;netstandard2.0;netstandard2.1;netcoreapp3.0;netcoreapp3.1;net5.0;net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
     <OutputType>Library</OutputType>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>SecureBase</Title>
     <Description>SecureBase Library</Description>
-    <PackageProjectUrl>https://github.com/beytullahakyuz/securebase-dotnet</PackageProjectUrl>
+    <PackageProjectUrl>https://beytullahakyuz.gitbook.io/securebase</PackageProjectUrl>
     <RepositoryUrl>https://github.com/beytullahakyuz/securebase-dotnet</RepositoryUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <FileVersion>1.7</FileVersion>
-    <AssemblyVersion>1.7</AssemblyVersion>
-    <Version>1.7</Version>
+    <FileVersion>1.8</FileVersion>
+    <AssemblyVersion>1.8</AssemblyVersion>
+    <Version>1.8</Version>
+    <Copyright>beytullahakyuz</Copyright>
+    <Company>beytullahakyuz</Company>
+    <Authors>beytullahakyuz</Authors>
   </PropertyGroup>
 
   <ItemGroup>

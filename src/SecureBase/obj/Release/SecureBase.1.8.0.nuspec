@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SecureBase</id>
+    <version>1.8.0</version>
+    <title>SecureBase</title>
+    <authors>beytullahakyuz</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>https://beytullahakyuz.gitbook.io/securebase</projectUrl>
+    <description>SecureBase Library</description>
+    <copyright>beytullahakyuz</copyright>
+    <repository type="git" url="https://github.com/beytullahakyuz/securebase-dotnet" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETFramework4.5.1" />
+      <group targetFramework=".NETFramework4.5.2" />
+      <group targetFramework=".NETFramework4.6" />
+      <group targetFramework=".NETFramework4.6.1" />
+      <group targetFramework=".NETFramework4.6.2" />
+      <group targetFramework=".NETFramework4.7" />
+      <group targetFramework=".NETFramework4.7.1" />
+      <group targetFramework=".NETFramework4.7.2" />
+      <group targetFramework=".NETFramework4.8" />
+      <group targetFramework=".NETFramework4.8.1" />
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp3.0" />
+      <group targetFramework=".NETCoreApp3.1" />
+      <group targetFramework="net5.0" />
+      <group targetFramework="net6.0" />
+      <group targetFramework="net7.0" />
+      <group targetFramework="net8.0" />
+      <group targetFramework="net9.0" />
+      <group targetFramework=".NETStandard2.0" />
+      <group targetFramework=".NETStandard2.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net40\SecureBase.dll" target="lib\net40\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net45\SecureBase.dll" target="lib\net45\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net451\SecureBase.dll" target="lib\net451\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net452\SecureBase.dll" target="lib\net452\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net46\SecureBase.dll" target="lib\net46\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net461\SecureBase.dll" target="lib\net461\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net462\SecureBase.dll" target="lib\net462\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net47\SecureBase.dll" target="lib\net47\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net471\SecureBase.dll" target="lib\net471\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net472\SecureBase.dll" target="lib\net472\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net48\SecureBase.dll" target="lib\net48\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net481\SecureBase.dll" target="lib\net481\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net5.0\SecureBase.dll" target="lib\net5.0\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net6.0\SecureBase.dll" target="lib\net6.0\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net7.0\SecureBase.dll" target="lib\net7.0\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net8.0\SecureBase.dll" target="lib\net8.0\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net9.0\SecureBase.dll" target="lib\net9.0\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\netcoreapp3.0\SecureBase.dll" target="lib\netcoreapp3.0\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\netcoreapp3.1\SecureBase.dll" target="lib\netcoreapp3.1\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\netstandard1.6\SecureBase.dll" target="lib\netstandard1.6\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\netstandard2.0\SecureBase.dll" target="lib\netstandard2.0\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\netstandard2.1\SecureBase.dll" target="lib\netstandard2.1\SecureBase.dll" />
+    <file src="C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\LICENSE" target="\LICENSE" />
+  </files>
+</package>

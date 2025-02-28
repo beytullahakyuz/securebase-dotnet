@@ -1,0 +1,9 @@
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net45\SecureBase.dll
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\bin\Release\net45\SecureBase.pdb
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Release\net45\SecureBase.csproj.AssemblyReference.cache
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Release\net45\SecureBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Release\net45\SecureBase.AssemblyInfoInputs.cache
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Release\net45\SecureBase.AssemblyInfo.cs
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Release\net45\SecureBase.csproj.CoreCompileInputs.cache
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Release\net45\SecureBase.dll
+C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Release\net45\SecureBase.pdb

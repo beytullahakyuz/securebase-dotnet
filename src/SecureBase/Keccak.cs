@@ -1,4 +1,6 @@
-﻿public sealed class Keccak : IDisposable {
+﻿using System;
+
+public sealed class Keccak : IDisposable {
     private const int KeccakRounds = 24;
     private static readonly ulong[] RoundConstants = new ulong[KeccakRounds]
     {

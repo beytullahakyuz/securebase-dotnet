@@ -18,7 +18,7 @@
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
       },
-      "SecureBase/1.7.0": {
+      "SecureBase/1.8.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SecureBase.dll": {}
@@ -58,19 +58,37 @@
         "realtaiizor.nuspec"
       ]
     },
-    "SecureBase/1.7.0": {
-      "sha512": "wsCAUp1ZbcVTHSwjhRgZL6RztGqwv5V6CmcGuDtciQOM6RSV42/16UOH3u/Xm9iPtqTKVrHKa6iV/Fp9tP4f6w==",
+    "SecureBase/1.8.0": {
+      "sha512": "egWlEyVdhcql9fUVxQKuD6tjWxSYN1ICG79IH7IAseemcgP5o1+JK13t/Cg7Cd7DdTyhfxl6oSdEJt2ReAwwSw==",
       "type": "package",
-      "path": "securebase/1.7.0",
+      "path": "securebase/1.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
+        "lib/net40/SecureBase.dll",
+        "lib/net45/SecureBase.dll",
+        "lib/net451/SecureBase.dll",
+        "lib/net452/SecureBase.dll",
+        "lib/net46/SecureBase.dll",
+        "lib/net461/SecureBase.dll",
+        "lib/net462/SecureBase.dll",
+        "lib/net47/SecureBase.dll",
+        "lib/net471/SecureBase.dll",
+        "lib/net472/SecureBase.dll",
+        "lib/net48/SecureBase.dll",
+        "lib/net481/SecureBase.dll",
+        "lib/net5.0/SecureBase.dll",
         "lib/net6.0/SecureBase.dll",
         "lib/net7.0/SecureBase.dll",
         "lib/net8.0/SecureBase.dll",
         "lib/net9.0/SecureBase.dll",
-        "securebase.1.7.0.nupkg.sha512",
+        "lib/netcoreapp3.0/SecureBase.dll",
+        "lib/netcoreapp3.1/SecureBase.dll",
+        "lib/netstandard1.6/SecureBase.dll",
+        "lib/netstandard2.0/SecureBase.dll",
+        "lib/netstandard2.1/SecureBase.dll",
+        "securebase.1.8.0.nupkg.sha512",
         "securebase.nuspec"
       ]
     }
@@ -78,7 +96,7 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "ReaLTaiizor >= 3.8.1.1",
-      "SecureBase >= 1.7.0"
+      "SecureBase >= 1.8.0"
     ]
   },
   "packageFolders": {
@@ -138,7 +156,7 @@
           },
           "SecureBase": {
             "target": "Package",
-            "version": "[1.7.0, )"
+            "version": "[1.8.0, )"
           }
         },
         "imports": [

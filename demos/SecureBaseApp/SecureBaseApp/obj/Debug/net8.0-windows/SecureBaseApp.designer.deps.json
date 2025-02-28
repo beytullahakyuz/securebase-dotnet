@@ -13,6 +13,14 @@
             "fileVersion": "3.8.1.1"
           }
         }
+      },
+      "SecureBase/1.8.0": {
+        "runtime": {
+          "lib/net8.0/SecureBase.dll": {
+            "assemblyVersion": "1.8.0.0",
+            "fileVersion": "1.8.0.0"
+          }
+        }
       }
     }
   },
@@ -23,6 +31,13 @@
       "sha512": "sha512-AiqhC/i5ySAbMICg93u8TtobxEtHGLi0VOzIZdKcxNd3eVEqmlbxT+sRHfoeNsMGKIN3guPAVKffn7I5o6s5Qg==",
       "path": "realtaiizor/3.8.1.1",
       "hashPath": "realtaiizor.3.8.1.1.nupkg.sha512"
+    },
+    "SecureBase/1.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-egWlEyVdhcql9fUVxQKuD6tjWxSYN1ICG79IH7IAseemcgP5o1+JK13t/Cg7Cd7DdTyhfxl6oSdEJt2ReAwwSw==",
+      "path": "securebase/1.8.0",
+      "hashPath": "securebase.1.8.0.nupkg.sha512"
     }
   }
 }

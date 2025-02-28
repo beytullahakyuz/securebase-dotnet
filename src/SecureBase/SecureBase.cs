@@ -1,9 +1,14 @@
 ﻿using System.Text;
 using System.Security.Cryptography;
+using System;
 
-public class SecureBase : IDisposable
+/*
+ * @author  : Beytullah Akyüz
+ * @github  : github.com/beytullahakyuz
+ * @mail    : beytullahakyuz@hotmail.com.tr
+ */
+public class SecureBase
 {
-
     public enum SBEncoding{
         UNICODE,
         UTF8
@@ -19,12 +24,18 @@ public class SecureBase : IDisposable
     public SecureBase(SBEncoding encoding) {
         globalcharset = base64standart;
         padding = '=';
-        GEncoding = encoding;
+        if (encoding == SBEncoding.UNICODE)
+            GEncoding = SBEncoding.UNICODE;
+        else
+            GEncoding = SBEncoding.UTF8;
     }
 
     public SecureBase(SBEncoding encoding, string secretkey) {
         SetSecretKey(secretkey);
-        GEncoding = encoding;
+        if (encoding == SBEncoding.UNICODE)
+            GEncoding = SBEncoding.UNICODE;
+        else
+            GEncoding = SBEncoding.UTF8;
     }
 
     public void SetSecretKey(string secretkey) {
@@ -180,18 +191,4 @@ public class SecureBase : IDisposable
         return arr;
     }
 
-    public void Dispose() {
-        Dispose(true);
-        GC.SuppressFinalize(this);
-    }
-    protected virtual void Dispose(bool disposing) {
-        if (!disposed) {
-            disposed = true;
-        }
-    }
-    ~SecureBase() {
-        Dispose(false);
-    }
-
 }
-
