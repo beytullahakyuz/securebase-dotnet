@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "SecureBase/1.8": {
+      "SecureBase/1.9": {
         "runtime": {
           "SecureBase.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "SecureBase/1.8": {
+    "SecureBase/1.9": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = SecureBase
-build_property.ProjectDir = C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\
+build_property.ProjectDir = C:\Users\windev\Desktop\securebase-dotnet-main\src\SecureBase\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

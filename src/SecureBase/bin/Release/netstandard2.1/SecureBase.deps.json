@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
-      "SecureBase/1.8": {
+      "SecureBase/1.9": {
         "runtime": {
           "SecureBase.dll": {}
         }
@@ -15,7 +15,7 @@
     }
   },
   "libraries": {
-    "SecureBase/1.8": {
+    "SecureBase/1.9": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

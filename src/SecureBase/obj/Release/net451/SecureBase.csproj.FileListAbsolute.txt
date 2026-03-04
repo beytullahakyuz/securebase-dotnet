@@ -7,3 +7,12 @@ C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Release\net451\Se
 C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Release\net451\SecureBase.csproj.CoreCompileInputs.cache
 C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Release\net451\SecureBase.dll
 C:\Users\beytullahakyuz\Desktop\Libs\SecureBase\SecureBase\obj\Release\net451\SecureBase.pdb
+C:\Users\windev\Desktop\securebase-dotnet-main\src\SecureBase\bin\Release\net451\SecureBase.dll
+C:\Users\windev\Desktop\securebase-dotnet-main\src\SecureBase\bin\Release\net451\SecureBase.pdb
+C:\Users\windev\Desktop\securebase-dotnet-main\src\SecureBase\obj\Release\net451\SecureBase.csproj.AssemblyReference.cache
+C:\Users\windev\Desktop\securebase-dotnet-main\src\SecureBase\obj\Release\net451\SecureBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\windev\Desktop\securebase-dotnet-main\src\SecureBase\obj\Release\net451\SecureBase.AssemblyInfoInputs.cache
+C:\Users\windev\Desktop\securebase-dotnet-main\src\SecureBase\obj\Release\net451\SecureBase.AssemblyInfo.cs
+C:\Users\windev\Desktop\securebase-dotnet-main\src\SecureBase\obj\Release\net451\SecureBase.csproj.CoreCompileInputs.cache
+C:\Users\windev\Desktop\securebase-dotnet-main\src\SecureBase\obj\Release\net451\SecureBase.dll
+C:\Users\windev\Desktop\securebase-dotnet-main\src\SecureBase\obj\Release\net451\SecureBase.pdb
